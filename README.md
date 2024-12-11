@@ -39,7 +39,7 @@
 3. Создание таблиц в БД:  
    Запустите сначала контейнер с БД:
    ```bash
-   docker-compose up -d db
+   docker compose up -d db
    ```
    Затем подключитесь к базе:
    ```bash
@@ -75,7 +75,7 @@
 
 4. Запуск приложения:
    ```bash
-   docker-compose up --build
+   docker compose up --build
    ```
    
    Приложение будет доступно по адресу:  
@@ -119,7 +119,7 @@
 │   ├── parse_repos.py
 │   ├── requirements.txt
 │   └── deploy.sh
-├── docker-compose.yml
+├── docker compose.yml
 ├── Dockerfile
 ├── requirements.txt
 ├── .env
@@ -255,7 +255,7 @@ aws --endpoint-url=https://storage.yandexcloud.net s3api put-object-acl \
 - Если таблицы пусты – запросы вернут пустые массивы.
 - Логи приложения можно просмотреть командой:
   ```bash
-  docker-compose logs
+  docker compose logs
   ```
 - Документация (Swagger UI) доступна по адресу:  
   [http://localhost:8000/docs](http://localhost:8000/docs)
